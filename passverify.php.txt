@@ -1,0 +1,10 @@
+<?php
+$enteredPassword = 'user_entered_password'; // Replace with the actual password entered by the user
+$hashedPasswordFromDatabase = '*C2926EBC581C4BED927E1F4E12904A85C1CEF203'; // Replace with the hashed password from the database
+
+if (password_verify($enteredPassword, $hashedPasswordFromDatabase)) {
+    echo 'Password is correct!';
+} else {
+    echo 'Incorrect password!';
+}
+?>
